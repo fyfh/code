@@ -9,4 +9,12 @@ show tables from a;
 ##
 describe a_b;
 select *from a_b;
+exit
 apt-get autoremove --purge mysql-server
+
+##Creating a Dedicated MySQL User and Granting Privileges
+
+CREATE USER 'gogo'@'localhost' IDENTIFIED BY 'password';
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'gogo'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+mysql -u gogo -p
