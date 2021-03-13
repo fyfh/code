@@ -1,2 +1,10 @@
+只在当前 shell 生效
 export https_proxy="http://192.168.56.1:10809"
 export http_proxy="http://192.168.56.1:10809"
+
+vim /etc/profile
+source /etc/profile
+
+只在当前 shell 生效
+export https_proxy=""
+export http_proxy=""
