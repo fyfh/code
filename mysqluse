@@ -1,0 +1,12 @@
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+create database a;
+use a;
+source a.sql;
+show tables;
+##
+show tables from a;
+##
+describe a_b;
+select *from a_b;
+apt-get autoremove --purge mysql-server
